@@ -54,6 +54,7 @@ struct SettingsButton: View {
     }
 }
 
+
 #Preview {
     SettingsButton(settingsTapped: .constant(true))
 }
