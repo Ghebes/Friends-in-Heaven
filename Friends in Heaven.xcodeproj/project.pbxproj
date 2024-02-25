@@ -8,21 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		4959C1042B211AA1007A2B00 /* Friends_in_HeavenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4959C1032B211AA1007A2B00 /* Friends_in_HeavenApp.swift */; };
-		4959C1062B211AA1007A2B00 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4959C1052B211AA1007A2B00 /* ContentView.swift */; };
+		4959C1062B211AA1007A2B00 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4959C1052B211AA1007A2B00 /* HomeView.swift */; };
 		4959C1082B211AA2007A2B00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4959C1072B211AA2007A2B00 /* Assets.xcassets */; };
 		4959C10B2B211AA2007A2B00 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4959C10A2B211AA2007A2B00 /* Preview Assets.xcassets */; };
 		496A66772B212FB30070F83C /* SettingsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496A66762B212FB30070F83C /* SettingsButton.swift */; };
 		496A66792B21359B0070F83C /* TopHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496A66782B21359B0070F83C /* TopHeader.swift */; };
+		499678782B8BD5260009CE34 /* ComicNeue-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 499678732B8BD3EB0009CE34 /* ComicNeue-Bold.ttf */; };
+		499678792B8BD5270009CE34 /* ComicNeue-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 499678742B8BD3EB0009CE34 /* ComicNeue-BoldItalic.ttf */; };
+		4996787A2B8BD52A0009CE34 /* ComicNeue-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 499678722B8BD3EB0009CE34 /* ComicNeue-Italic.ttf */; };
+		4996787B2B8BD52C0009CE34 /* ComicNeue-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 499678712B8BD3EB0009CE34 /* ComicNeue-Light.ttf */; };
+		4996787C2B8BD52E0009CE34 /* ComicNeue-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 499678702B8BD3EB0009CE34 /* ComicNeue-LightItalic.ttf */; };
+		4996787D2B8BD5300009CE34 /* ComicNeue-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4996786F2B8BD3EB0009CE34 /* ComicNeue-Regular.ttf */; };
+		499678812B8BD7680009CE34 /* LevelDifficultyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499678802B8BD7680009CE34 /* LevelDifficultyButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4959C1002B211AA1007A2B00 /* Friends in Heaven.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Friends in Heaven.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4959C1032B211AA1007A2B00 /* Friends_in_HeavenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friends_in_HeavenApp.swift; sourceTree = "<group>"; };
-		4959C1052B211AA1007A2B00 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4959C1052B211AA1007A2B00 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		4959C1072B211AA2007A2B00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4959C10A2B211AA2007A2B00 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		496A66762B212FB30070F83C /* SettingsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsButton.swift; sourceTree = "<group>"; };
 		496A66782B21359B0070F83C /* TopHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHeader.swift; sourceTree = "<group>"; };
+		4996786F2B8BD3EB0009CE34 /* ComicNeue-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ComicNeue-Regular.ttf"; sourceTree = "<group>"; };
+		499678702B8BD3EB0009CE34 /* ComicNeue-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ComicNeue-LightItalic.ttf"; sourceTree = "<group>"; };
+		499678712B8BD3EB0009CE34 /* ComicNeue-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ComicNeue-Light.ttf"; sourceTree = "<group>"; };
+		499678722B8BD3EB0009CE34 /* ComicNeue-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ComicNeue-Italic.ttf"; sourceTree = "<group>"; };
+		499678732B8BD3EB0009CE34 /* ComicNeue-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ComicNeue-Bold.ttf"; sourceTree = "<group>"; };
+		499678742B8BD3EB0009CE34 /* ComicNeue-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ComicNeue-BoldItalic.ttf"; sourceTree = "<group>"; };
+		499678752B8BD3FB0009CE34 /* Friends-in-Heaven-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Friends-in-Heaven-Info.plist"; sourceTree = SOURCE_ROOT; };
+		499678802B8BD7680009CE34 /* LevelDifficultyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelDifficultyButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +70,13 @@
 		4959C1022B211AA1007A2B00 /* Friends in Heaven */ = {
 			isa = PBXGroup;
 			children = (
+				4996787F2B8BD6BC0009CE34 /* Home */,
+				4996787E2B8BD6B10009CE34 /* Header */,
+				499678752B8BD3FB0009CE34 /* Friends-in-Heaven-Info.plist */,
 				49C31C372B23CC7D005934B3 /* Fonts */,
 				4959C1032B211AA1007A2B00 /* Friends_in_HeavenApp.swift */,
-				4959C1052B211AA1007A2B00 /* ContentView.swift */,
 				4959C1072B211AA2007A2B00 /* Assets.xcassets */,
 				4959C1092B211AA2007A2B00 /* Preview Content */,
-				496A66762B212FB30070F83C /* SettingsButton.swift */,
-				496A66782B21359B0070F83C /* TopHeader.swift */,
 			);
 			path = "Friends in Heaven";
 			sourceTree = "<group>";
@@ -74,9 +89,33 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		4996787E2B8BD6B10009CE34 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				496A66762B212FB30070F83C /* SettingsButton.swift */,
+				496A66782B21359B0070F83C /* TopHeader.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		4996787F2B8BD6BC0009CE34 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4959C1052B211AA1007A2B00 /* HomeView.swift */,
+				499678802B8BD7680009CE34 /* LevelDifficultyButton.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		49C31C372B23CC7D005934B3 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				499678732B8BD3EB0009CE34 /* ComicNeue-Bold.ttf */,
+				499678742B8BD3EB0009CE34 /* ComicNeue-BoldItalic.ttf */,
+				499678722B8BD3EB0009CE34 /* ComicNeue-Italic.ttf */,
+				499678712B8BD3EB0009CE34 /* ComicNeue-Light.ttf */,
+				499678702B8BD3EB0009CE34 /* ComicNeue-LightItalic.ttf */,
+				4996786F2B8BD3EB0009CE34 /* ComicNeue-Regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -139,8 +178,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4996787C2B8BD52E0009CE34 /* ComicNeue-LightItalic.ttf in Resources */,
+				499678792B8BD5270009CE34 /* ComicNeue-BoldItalic.ttf in Resources */,
+				499678782B8BD5260009CE34 /* ComicNeue-Bold.ttf in Resources */,
 				4959C10B2B211AA2007A2B00 /* Preview Assets.xcassets in Resources */,
 				4959C1082B211AA2007A2B00 /* Assets.xcassets in Resources */,
+				4996787A2B8BD52A0009CE34 /* ComicNeue-Italic.ttf in Resources */,
+				4996787B2B8BD52C0009CE34 /* ComicNeue-Light.ttf in Resources */,
+				4996787D2B8BD5300009CE34 /* ComicNeue-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +196,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4959C1062B211AA1007A2B00 /* ContentView.swift in Sources */,
+				4959C1062B211AA1007A2B00 /* HomeView.swift in Sources */,
+				499678812B8BD7680009CE34 /* LevelDifficultyButton.swift in Sources */,
 				496A66772B212FB30070F83C /* SettingsButton.swift in Sources */,
 				496A66792B21359B0070F83C /* TopHeader.swift in Sources */,
 				4959C1042B211AA1007A2B00 /* Friends_in_HeavenApp.swift in Sources */,
@@ -291,6 +337,7 @@
 				DEVELOPMENT_TEAM = 99G82434DT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Friends-in-Heaven-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -321,6 +368,7 @@
 				DEVELOPMENT_TEAM = 99G82434DT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Friends-in-Heaven-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
