@@ -24,6 +24,9 @@ struct Arc: Shape{
     func path(in rect: CGRect) -> Path {
         var path = Path()
         
+        path.move(to: CGPoint(x: rect.minX, y: rect.minY))
+        path.addLine(to: CGPoint(x: (rect.maxX / 2), y: rect.minY))
+       
         
         return path
     }
@@ -41,6 +44,7 @@ struct LevelDifficultyButton: View {
     ///Variable for the background color of the button
     @State var backgroundColor: Color = .green
     
+    @State var proxy : GeometryProxy
     ///Computed property to determine which side of the screen the difficult show lie
     var side: Side{
         switch(difficulty){
@@ -56,7 +60,10 @@ struct LevelDifficultyButton: View {
     }
     
     var body: some View {
-        GeometryReader(){ proxy in
+        HStack{
+            if(side == .right){
+                Spacer()
+            }
             VStack(spacing: 2){
                 HStack{
                     Text(difficulty.rawValue.uppercased())
@@ -71,23 +78,33 @@ struct LevelDifficultyButton: View {
                 }
                 .padding(.horizontal, proxy.size.width * 16 / 393)
                 
+                Spacer()
                 HStack{
                     image
                         .resizable()
                         .frame(width: proxy.size.width * 50 / 393, height: proxy.size.height * 60 / 852)
                         .cornerRadius(5)
                 }
+                .padding(.bottom, proxy.size.height * 10 / 852)
             }
-            .frame(width: proxy.size.width * 175/393, height: proxy.size.height * 135/852)
+            .frame(width: proxy.size.width * 175/393, height: proxy.size.height * 130/852)
             .background(backgroundColor)
             .cornerRadius(20)
-            .padding(.leading, proxy.size.width * 20/393)
             
+            if(side == .left){
+                Spacer()
+            }
         }
-        
+        .padding(side == .left ? .leading : .trailing , proxy.size.width * 20 / 393)
+            
     }
 }
 
-#Preview {
-    LevelDifficultyButton()
-}
+
+ #Preview {
+     GeometryReader{proxy in
+         LevelDifficultyButton(proxy:proxy)
+     }
+     
+ }
+

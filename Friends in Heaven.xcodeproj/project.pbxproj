@@ -20,6 +20,9 @@
 		4996787C2B8BD52E0009CE34 /* ComicNeue-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 499678702B8BD3EB0009CE34 /* ComicNeue-LightItalic.ttf */; };
 		4996787D2B8BD5300009CE34 /* ComicNeue-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4996786F2B8BD3EB0009CE34 /* ComicNeue-Regular.ttf */; };
 		499678812B8BD7680009CE34 /* LevelDifficultyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499678802B8BD7680009CE34 /* LevelDifficultyButton.swift */; };
+		499678872B8E95770009CE34 /* TabNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499678862B8E95770009CE34 /* TabNavigation.swift */; };
+		4996788A2B8E9BE30009CE34 /* GuessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499678892B8E9BE30009CE34 /* GuessView.swift */; };
+		4996788D2B8E9D350009CE34 /* Saints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996788C2B8E9D350009CE34 /* Saints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		499678742B8BD3EB0009CE34 /* ComicNeue-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ComicNeue-BoldItalic.ttf"; sourceTree = "<group>"; };
 		499678752B8BD3FB0009CE34 /* Friends-in-Heaven-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Friends-in-Heaven-Info.plist"; sourceTree = SOURCE_ROOT; };
 		499678802B8BD7680009CE34 /* LevelDifficultyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelDifficultyButton.swift; sourceTree = "<group>"; };
+		499678862B8E95770009CE34 /* TabNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNavigation.swift; sourceTree = "<group>"; };
+		499678892B8E9BE30009CE34 /* GuessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessView.swift; sourceTree = "<group>"; };
+		4996788C2B8E9D350009CE34 /* Saints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Saints.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,9 @@
 		4959C1022B211AA1007A2B00 /* Friends in Heaven */ = {
 			isa = PBXGroup;
 			children = (
+				4996788B2B8E9D240009CE34 /* Saints Setup */,
+				499678882B8E9BD80009CE34 /* Guessing */,
+				499678852B8E95670009CE34 /* Navigation */,
 				4996787F2B8BD6BC0009CE34 /* Home */,
 				4996787E2B8BD6B10009CE34 /* Header */,
 				499678752B8BD3FB0009CE34 /* Friends-in-Heaven-Info.plist */,
@@ -105,6 +114,30 @@
 				499678802B8BD7680009CE34 /* LevelDifficultyButton.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		499678852B8E95670009CE34 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				499678862B8E95770009CE34 /* TabNavigation.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		499678882B8E9BD80009CE34 /* Guessing */ = {
+			isa = PBXGroup;
+			children = (
+				499678892B8E9BE30009CE34 /* GuessView.swift */,
+			);
+			path = Guessing;
+			sourceTree = "<group>";
+		};
+		4996788B2B8E9D240009CE34 /* Saints Setup */ = {
+			isa = PBXGroup;
+			children = (
+				4996788C2B8E9D350009CE34 /* Saints.swift */,
+			);
+			path = "Saints Setup";
 			sourceTree = "<group>";
 		};
 		49C31C372B23CC7D005934B3 /* Fonts */ = {
@@ -197,8 +230,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4959C1062B211AA1007A2B00 /* HomeView.swift in Sources */,
+				4996788D2B8E9D350009CE34 /* Saints.swift in Sources */,
 				499678812B8BD7680009CE34 /* LevelDifficultyButton.swift in Sources */,
 				496A66772B212FB30070F83C /* SettingsButton.swift in Sources */,
+				499678872B8E95770009CE34 /* TabNavigation.swift in Sources */,
+				4996788A2B8E9BE30009CE34 /* GuessView.swift in Sources */,
 				496A66792B21359B0070F83C /* TopHeader.swift in Sources */,
 				4959C1042B211AA1007A2B00 /* Friends_in_HeavenApp.swift in Sources */,
 			);

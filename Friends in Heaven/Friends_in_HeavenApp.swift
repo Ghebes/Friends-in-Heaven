@@ -13,7 +13,7 @@ struct Friends_in_HeavenApp: App {
     @AppStorage("stars") var stars: Int = 0
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            TabNavigation()
         }
     }
 }

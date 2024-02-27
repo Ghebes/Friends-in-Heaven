@@ -20,8 +20,8 @@ struct TopHeader: View {
     ///Variable that holds the image IF there is one
     @State var saintImage: Image = Image(systemName: "plus")
     
+    @State var proxy: GeometryProxy
     var body: some View {
-        GeometryReader() {proxy in
             
             ZStack{
                 BackgroundShape()
@@ -50,7 +50,7 @@ struct TopHeader: View {
                         }
                         .frame(alignment: .top)
                     }
-                    .padding([.horizontal, .top], 30)
+                    .padding([.horizontal, .top], 45)
                     
                     
                     HStack{
@@ -59,18 +59,16 @@ struct TopHeader: View {
                             .font(.custom("ComicNeue-BOLD", size: 40))
                         
                     }
-                    .padding(.top, proxy.size.height * 27/852)
+                    .padding(.top, proxy.size.height * 20/852)
                     
                 }
                 .ignoresSafeArea(edges: .top)
                 
                 
             }
-            .frame(width: proxy.size.width, height: proxy.size.height * 208/852)
+            .frame(width: proxy.size.width, height: proxy.size.height * 200/852)
             
             
-        }
-        .ignoresSafeArea(edges: .top)
         
     }
 }
@@ -88,7 +86,7 @@ struct BackgroundShape: Shape{
             control: CGPoint(x: 105, y: rect.minY + 160))
         path.addQuadCurve(
             to: CGPoint(x: rect.maxX, y: rect.maxY ),
-            control: CGPoint(x: 250 + (rect.maxX - 250) / 2, y: rect.maxY + 40))
+            control: CGPoint(x: 250 + (rect.maxX - 250) / 2, y: rect.maxY + 30))
         path.addLine(to: CGPoint(x: rect.maxX, y: rect.minY))
         
         return path
@@ -99,5 +97,8 @@ struct BackgroundShape: Shape{
 
 
 #Preview {
-    TopHeader()
+    GeometryReader{proxy in
+        TopHeader(proxy: proxy)
+    }
+    
 }
