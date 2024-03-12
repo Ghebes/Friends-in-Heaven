@@ -13,20 +13,14 @@ struct HomeView: View {
             GeometryReader() {proxy in
                 VStack(spacing: 0){
                     TopHeader(proxy: proxy)
-                    VStack(spacing : proxy.size.height * 15 / 852){
-                        NavigationLink{
-                            GuessView(level: .easy)
-                        }label: {
-                            LevelDifficultyButton(difficulty: .easy, image: Image(systemName: "plus"), backgroundColor: .green, proxy: proxy)
-                        }
+                    VStack(spacing : proxy.size.height * 10 / 852){
+                        LevelDifficultyButton(difficulty: .easy, image: Image("mary"), backgroundColor: .green, proxy: proxy)
                         
+                        LevelDifficultyButton(difficulty: .medium, image: Image("athansius"), backgroundColor: .orange, proxy: proxy)
                         
+                        LevelDifficultyButton(difficulty: .hard, image: Image("didymus"), backgroundColor: .red, proxy: proxy)
                         
-                        LevelDifficultyButton(difficulty: .medium, image: Image(systemName: "plus"), backgroundColor: .orange, proxy: proxy)
-                        
-                        LevelDifficultyButton(difficulty: .hard, image: Image(systemName: "plus"), backgroundColor: .red, proxy: proxy)
-                        
-                        LevelDifficultyButton(difficulty: .mixed, image: Image(systemName: "plus"), backgroundColor: .blue, proxy: proxy)
+                        LevelDifficultyButton(difficulty: .mixed, image: Image("maurice"), backgroundColor: .blue, proxy: proxy)
                         
                     }
                     .padding(.top, proxy.size.height * 20 / 852)

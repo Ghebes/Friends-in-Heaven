@@ -37,6 +37,7 @@ struct TopHeader: View {
                             Text(String(stars))
                                 .foregroundStyle(.white)
                                 .font(.custom("ComicNeue-Regular", size: 30))
+                                
                             
                             Image(systemName: "star.fill")
                                 .resizable()
@@ -46,11 +47,14 @@ struct TopHeader: View {
                                     Image(systemName: "star")
                                         .resizable()
                                         .frame(width: 23, height: 23)
+                                        .foregroundColor(.black)
                                 }
+                                .rotationEffect(.degrees(52.2))
                         }
                         .frame(alignment: .top)
                     }
-                    .padding([.horizontal, .top], 45)
+                    .padding(.horizontal, 20)
+                    .padding(.top, 50)
                     
                     
                     HStack{
@@ -59,7 +63,7 @@ struct TopHeader: View {
                             .font(.custom("ComicNeue-BOLD", size: 40))
                         
                     }
-                    .padding(.top, proxy.size.height * 20/852)
+                    .padding(.bottom, proxy.size.height * 5/852)
                     
                 }
                 .ignoresSafeArea(edges: .top)

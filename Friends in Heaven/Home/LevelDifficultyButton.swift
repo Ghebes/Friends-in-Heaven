@@ -19,17 +19,19 @@ enum Side{
     case right
 }
 
+
 /// Shape for the top background header for the whole application
 struct Arc: Shape{
     func path(in rect: CGRect) -> Path {
         var path = Path()
         
-        path.move(to: CGPoint(x: rect.minX, y: rect.minY))
-        path.addLine(to: CGPoint(x: (rect.maxX / 2), y: rect.minY))
+        path.addArc(center: CGPoint(x: 30, y: 30), radius: 20, startAngle: .degrees(0), endAngle: .degrees(180), clockwise: true)
+        path.addArc(center: CGPoint(x: 30, y: 30), radius: 15, startAngle: .degrees(0), endAngle: .degrees(180), clockwise: true)
        
         
         return path
     }
+    
     
     
 }
@@ -64,33 +66,41 @@ struct LevelDifficultyButton: View {
             if(side == .right){
                 Spacer()
             }
-            VStack(spacing: 2){
-                HStack{
-                    Text(difficulty.rawValue.uppercased())
-                        .foregroundStyle(.white)
-                        .font(.custom("ComicNeue-Regular", size: 18))
+            NavigationLink{
+                GuessView(level: difficulty)
+            }label:{
+                VStack(spacing: 0){
+                    HStack{
+                        Text(difficulty.rawValue.uppercased())
+                            .foregroundStyle(.white)
+                            .font(.custom("ComicNeue-Regular", size: 18))
+                        
+                        Spacer()
+                        
+                        Arc()
+                            .fill(.white)
+                            .frame(width: proxy.size.width * 50/393, height: proxy.size.height * 50 / 852)
+                            
+                        
+                    }
+                    .padding(.horizontal, proxy.size.width * 16 / 393)
                     
-                    Spacer()
                     
-                    Arc()
-                        .frame(width: proxy.size.width * 50/393, height: proxy.size.height * 50 / 852)
+                    HStack{
+                        image
+                            .resizable()
+                            .frame(width: proxy.size.width * 50 / 393, height: proxy.size.height * 80 / 852)
+                            .cornerRadius(5)
+                            .padding(.bottom, proxy.size.height * 20 / 852)
+                        
+                    }
                     
                 }
-                .padding(.horizontal, proxy.size.width * 16 / 393)
+                .frame(width: proxy.size.width * 175/393, height: proxy.size.height * 130/852)
+                .background(backgroundColor)
+                .cornerRadius(20)
                 
-                Spacer()
-                HStack{
-                    image
-                        .resizable()
-                        .frame(width: proxy.size.width * 50 / 393, height: proxy.size.height * 60 / 852)
-                        .cornerRadius(5)
-                }
-                .padding(.bottom, proxy.size.height * 10 / 852)
             }
-            .frame(width: proxy.size.width * 175/393, height: proxy.size.height * 130/852)
-            .background(backgroundColor)
-            .cornerRadius(20)
-            
             if(side == .left){
                 Spacer()
             }

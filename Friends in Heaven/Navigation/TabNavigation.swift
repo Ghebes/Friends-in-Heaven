@@ -67,6 +67,7 @@ struct TabNavigation: View {
                 }
             }
         }
+        .preferredColorScheme(.dark)
     }
 }
 

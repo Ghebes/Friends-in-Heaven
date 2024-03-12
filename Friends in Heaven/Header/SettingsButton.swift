@@ -14,16 +14,16 @@ struct SettingsButton: View {
     @Binding var settingsTapped: Bool
     
     var body: some View {
-            Circle()
+            Ellipse()
             .fill(settingsTapped ? .headerBackground : .settingsOrange)
                 .frame(width: 50, height: 47)
                 .overlay{
-                    Circle()
+                    Ellipse()
                         .fill(settingsTapped ? .black : .settingslightOrange)
                         .frame(width: 50, height: 47)
                         .offset(x: 0, y: -1)
                         .overlay{
-                            Circle()
+                            Ellipse()
                                 .fill(settingsTapped ? .black: .settingsYellow)
                                 .frame(width: 50, height: 47)
                                 .offset(x: 0, y: -2)
@@ -39,14 +39,14 @@ struct SettingsButton: View {
                                         }
                                         Image(systemName: settingsTapped ? "xmark" : "gearshape.fill")
                                             .resizable()
-                                            .frame(width: 25, height: 25)
+                                            .frame(width: 20, height: 20)
                                             .foregroundStyle(.white)
                                             .offset(x:0, y: -2)
                                     }
                                 }
                         }
                 }
-                .shadow(radius: 6)
+                .shadow(radius: 2, y: 2)
                 .onTapGesture {
                     settingsTapped.toggle()
                     
@@ -56,5 +56,5 @@ struct SettingsButton: View {
 
 
 #Preview {
-    SettingsButton(settingsTapped: .constant(true))
+    SettingsButton(settingsTapped: .constant(false))
 }
